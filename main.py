@@ -11,10 +11,10 @@ def main() -> None:
         print(copyJournalFile)
 
         refTransFile = csvFiles.createRef()
-        print(refTransFile)
-    except Exception as e:
-        print(f"Error creating CSVFileHandling instance: {e}")
-        return
+        #print(refTransFile)
+    except Exception as ex:
+        print(f"Error creating CSVFileHandling instance: {ex}")
+        #return
 
 if __name__ == "__main__":
     main()
