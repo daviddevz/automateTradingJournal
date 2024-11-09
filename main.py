@@ -1,17 +1,27 @@
 from myModules import myModules
 
 def main() -> None:
-    journalFile = "csvfiles/TT Margin V.1.2 2024.csv"
-    transactionFile = "csvfiles/TastytradeTransactions.csv"
+    journalFile = "csvfiles/Journal.csv"
+    transactionFile = "csvfiles/Transactions.csv"
+    colToRemove = ["Sub Type", "Symbol", "Instrument Type", "Quantity", 
+                    "Average Price", "Multiplier", "Underling", "Order",
+                    "Currency"]
     
     try:
-        csvFiles = myModules.CSVFileHandling(journalFile, transactionFile)
+        csvFilesJorn = myModules.CSVFileHandling(journalFile)
         
-        copyJournalFile = csvFiles.createCopy()
-        print(copyJournalFile)
+        csvFilesJorn.createCopy()
+        #csvDictJourn = csvFiles.createCSVDict()
 
-        refTransFile = csvFiles.createRef()
-        #print(refTransFile)
+        #print(csvDict)
+
+        csvFilesTrans = myModules.CSVFileHandling(transactionFile, colToRemove)
+        
+        csvFilesTrans.createCopy()
+        csvDictTrans = csvFilesTrans.createCSVDict()
+        print(csvDictTrans)
+        csvFilesTrans.rewriteCopy(csvDictTrans)
+        
     except Exception as ex:
         print(f"Error creating CSVFileHandling instance: {ex}")
         #return

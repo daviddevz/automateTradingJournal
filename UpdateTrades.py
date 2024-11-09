@@ -10,6 +10,7 @@ class UpdateTrades:
     
     #delete unnecessary columns in transaction file
     def removeTransCol(self) -> None:
+        #For tastytrade
         if self.brokerage_ == "TT":
             try:
                 with open(self.transFilePath_, 'r', newlone='') as csvfileRead:
@@ -44,8 +45,10 @@ class UpdateTrades:
 
             except FileNotFoundError:
                 print("File Not Found While Removing Trans Cols")
+        #For Schwab
         elif self.brokerage_ == "S":
             pass
+        #For Robinhood
         elif self.brokerage_ == "RH":
             pass
 
