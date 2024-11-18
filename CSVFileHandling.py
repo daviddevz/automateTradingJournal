@@ -1,7 +1,5 @@
 import csv
-from typing import Optional  # Import Optional for handling potential errors
 
-# Handle .csv file for Tastytrade, Robinhood and Schwab
 class CSVFileHandling:
     def __init__(self, csvFilePath: str, colToRemove: list = []) -> None:
         self.csvFilePath_ = csvFilePath
@@ -10,53 +8,62 @@ class CSVFileHandling:
     
     #Create a copy of the csv file 
     def createCopy(self) -> None:
-        try:
-            with open(self.csvFilePath_,'r', newline='') as csvfileRead:
-                readFile = csv.reader(csvfileRead, delimiter=',')
-                with open(self.copyFilename, 'w', newline='') as csvfileWrite:
-                    writeFile = csv.writer(csvfileWrite, delimiter=',')
-                    for row in readFile:
-                        writeFile.writerow(row)
-            #print("Copy was successful")
-            #return writeFile
-        except FileNotFoundError:
-            print("Files Not Found While Copying")
+        with open(self.csvFilePath_,'r', newline='') as csvfileRead:
+            readFile = csv.reader(csvfileRead, delimiter=',')
+            with open(self.copyFilename, 'w', newline='') as csvfileWrite:
+                writeFile = csv.writer(csvfileWrite, delimiter=',')
+                for row in readFile:
+                    writeFile.writerow(row)
     
+    # Convert Date/Time Format to Date and return a dict with update date
+    def dateTimeToDateTrans(self, transDict) -> dict:
+        # Loop that goes through each date and splice out the neccessary files
+        for idx in range(len(transDict['Date'])):
+            oldValue = transDict['Date'][idx]
+            transDict['Date'][idx] = oldValue[:10]
+        return transDict
+
     #Create dictionary from a csv dictReader
-    def createCSVDict(self) -> Optional[dict]:
-        try:
-            with open(self.copyFilename, newline='') as csvfile:
-                reader = csv.DictReader(csvfile)
-                csvDict = {}
-                for dictRow in reader:
-                    #print(dictRow)
-                    for key in dictRow:
-                        #print("Hello World")
-                        if key == '' or key in self.colToRemove_:
-                            continue
-                        elif key not in csvDict:
-                            csvDict[key] = []
-                        elif type(csvDict[key]) == list:
-                            csvDict[key].append(dictRow[key])
-                           
-                #print("Creating dict from csv file is successful")
-                return dict(csvDict)
-        except FileNotFoundError:
-            print("File Not Found While Creating Dictionary")
-            return None
-        
+    def createCSVDict(self, convertDate: bool) -> dict:
+        with open(self.copyFilename, newline='') as csvfile:
+            header = next(csv.reader(csvfile))
+            reader = csv.DictReader(csvfile, fieldnames= header)
+            csvDict = {}
+
+            #Creating the dictionary
+            for dictRow in reader:
+                
+                #Remove empty keys, add keys and update value list
+                for key in dictRow:
+                    if key == '' or key in self.colToRemove_:
+                        continue
+                    elif key not in csvDict:
+                        csvDict[key] = []
+                        csvDict[key].append(dictRow[key])
+                    elif type(csvDict[key]) == list:
+                        csvDict[key].append(dictRow[key])
+            if convertDate:
+                return self.dateTimeToDateTrans(csvDict)
+            else:
+                return csvDict
+    
     #Rewrite a csv file copy 
     def rewriteCopy(self, dictCopy) -> None:
-        try:
-            with open(self.copyFilename,'w', newline='') as csvfileWrite:
-                writeFile = csv.writer(csvfileWrite, delimiter=',')
-                header = []
+        with open(self.copyFilename,'w', newline='') as csvfileWrite:
+            writeFile = csv.writer(csvfileWrite, delimiter=',')
+            header = []
 
-                #Create a list of the header
-                for key in dictCopy:
-                    header.append(key)
-                print(header)
-                writeFile.writerow(header)
-        except FileNotFoundError:
-            print("Files Not Found While Copying")
+            #Create a list of the header
+            for key in dictCopy:
+                header.append(key)
+            writeFile.writerow(header)
+
+            #Write the rest of the rows from dictCopy
+            lengthOfIt = len(dictCopy[header[0]])
+            row = []
+            for idx in range(lengthOfIt):
+                for col in header:
+                    row.append(dictCopy[col][idx])
+                writeFile.writerow(row)
+                row.clear()
         

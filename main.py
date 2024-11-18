@@ -5,26 +5,29 @@ def main() -> None:
     transactionFile = "csvfiles/Transactions.csv"
     colToRemove = ["Sub Type", "Symbol", "Instrument Type", "Quantity", 
                     "Average Price", "Multiplier", "Underling", "Order",
-                    "Currency"]
+                    "Currency", "Type", "Strike Price", "Call or Put", "Order #"]
     
-    try:
-        csvFilesJorn = myModules.CSVFileHandling(journalFile)
-        
-        csvFilesJorn.createCopy()
-        #csvDictJourn = csvFiles.createCSVDict()
+    
+    csvFilesJorn = myModules.CSVFileHandling(journalFile)
+    csvFilesJorn.createCopy()
+    csvDictJourn = csvFilesJorn.createCSVDict(False)
+    #print(csvDictJourn)
+    csvFilesJorn.rewriteCopy(csvDictJourn)
 
-        #print(csvDict)
+    csvFilesTrans = myModules.CSVFileHandling(transactionFile, colToRemove)
+    csvFilesTrans.createCopy()
+    csvDictTrans = csvFilesTrans.createCSVDict(True)
+    #print(csvDictTrans)
+    csvFilesTrans.rewriteCopy(csvDictTrans)
 
-        csvFilesTrans = myModules.CSVFileHandling(transactionFile, colToRemove)
+    updateJourn = myModules.UpdateTrades(csvDictJourn, csvDictTrans)
+    openTradesJournDict = updateJourn.getOpenTrades()
+    #print(csvDictTrans)
+    (closedTradesTransDict, newTradesTransDict) = updateJourn.searchTrades(openTradesJournDict)
+    updateJourn.addTrades(openTradesJournDict, closedTradesTransDict, "Closed")
+    updateJourn.addTrades(openTradesJournDict, newTradesTransDict, "New")
+    updatedJournDict = updateJourn.returnJournalDict()
         
-        csvFilesTrans.createCopy()
-        csvDictTrans = csvFilesTrans.createCSVDict()
-        print(csvDictTrans)
-        csvFilesTrans.rewriteCopy(csvDictTrans)
-        
-    except Exception as ex:
-        print(f"Error creating CSVFileHandling instance: {ex}")
-        #return
 
 if __name__ == "__main__":
     main()
