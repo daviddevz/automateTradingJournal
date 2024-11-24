@@ -22,12 +22,12 @@ def main() -> None:
 
     updateJourn = myModules.UpdateTrades(csvDictJourn, csvDictTrans)
     openTradesJournDict = updateJourn.getOpenTrades()
-    #print(csvDictTrans)
-    (closedTradesTransDict, newTradesTransDict) = updateJourn.searchTrades(openTradesJournDict)
-    updateJourn.addTrades(openTradesJournDict, closedTradesTransDict, "Closed")
-    updateJourn.addTrades(openTradesJournDict, newTradesTransDict, "New")
-    updatedJournDict = updateJourn.returnJournalDict()
-        
+    #print(openTradesJournDict)
+
+    #print(updateJourn.numDateToWordDate("2020-9-23"))
+   
+    updatedJournDict = updateJourn.updateJournDict(openTradesJournDict)
+    #print(openTradesJournDict)
 
 if __name__ == "__main__":
     main()
