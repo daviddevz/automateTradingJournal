@@ -1,4 +1,5 @@
 import csv
+from Classes.Utility import Utility
 
 class CSVFileHandling:
     def __init__(self, csvFilePath: str, colToRemove: list = []) -> None:
@@ -15,14 +16,6 @@ class CSVFileHandling:
                 for row in readFile:
                     writeFile.writerow(row)
     
-    # Convert Date/Time Format to Date and return a dict with update date
-    def dateTimeToDateTrans(self, transDict) -> dict:
-        # Loop that goes through each date and splice out the neccessary files
-        for idx in range(len(transDict['Date'])):
-            oldValue = transDict['Date'][idx]
-            transDict['Date'][idx] = oldValue[:10]
-        return transDict
-
     #Create dictionary from a csv dictReader
     def createCSVDict(self, convertDate: bool) -> dict:
         with open(self.copyFilename, newline='') as csvfile:
@@ -42,8 +35,10 @@ class CSVFileHandling:
                         csvDict[key].append(dictRow[key])
                     elif type(csvDict[key]) == list:
                         csvDict[key].append(dictRow[key])
-            if convertDate:
-                return self.dateTimeToDateTrans(csvDict)
+            
+            # YYYY-MM-DDTHH:MM:SSZ to YYYY-MM-DD example 2024-11-07T11:40:48-0600 to 2024-11-07
+            if convertDate: 
+                return Utility.dateTimeToDate(csvDict, 'Date') #self.dateTimeToDateTrans(csvDict)
             else:
                 return csvDict
     
