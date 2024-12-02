@@ -13,22 +13,22 @@ Given an existing trading journal and a trade transaction file from Tastytrade, 
 
 If a trade was opened and closed a few weeks later.
 
-!["Opened Trade"](./images/openedTrade.png)
+!["Opened Trade"](./README/openedTrade.png)
 
 Using the tastytrade trade transaction file, the program should be able to detect a closed trade and update the trading journal exit date, close price, progress, and commission/fees.
 
-!["Closed Trade"](./images/closedTrade.png)
+!["Closed Trade"](./README/closedTrade.png)
 
 <u>Trade Journal Sample</u>
 
-!["Trade Journal Sample"](./images/tradeJournalSample.png)
+!["Trade Journal Sample"](./README/tradeJournalSample.png)
 
 <u>Trade Transaction Sample</u>
 
-!["Trade Transaction Sample"](./images/tradeTransactionSample.png)
+!["Trade Transaction Sample"](./README/tradeTransactionSample.png)
 
 ## Design Diagram
-!["Design Diagram"](./images/design%20diagram.png)
+!["Design Diagram"](./README/design%20diagram.png)
 
 ## Design Documentation
 **CSVFileHandling:** A class that takes in CSV files creates a copy and reference to trading journal and trade transaction files respectively.
