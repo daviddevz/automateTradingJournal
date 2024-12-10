@@ -1,6 +1,5 @@
-/__pycache__
-/CSVFiles
-/TradeTransactionSort.egg-info
-/.vscode/
-/Classes/__pycache__/
-/Test/__pycache__/
+__pycache__/
+.pytest_cache/
+CSVFiles/
+.vscode/
+TradeTransactionSort.egg-info/
