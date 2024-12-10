@@ -24,7 +24,7 @@ class CSVHandling:
         with open(self.copy_filename, newline='') as csvfile:
             header = next(csv.reader(csvfile))
             reader = csv.DictReader(csvfile, fieldnames= header)
-            csv_dict = dict()
+            csv_dict = {}
 
             for row in reader:
                 for key in row:
@@ -32,13 +32,14 @@ class CSVHandling:
                         continue
 
                     elif key not in csv_dict:
-                        csv_dict[key] = list()
+                        csv_dict[key] = []
                         csv_dict[key].append(row[key])
 
                     else:
                         csv_dict[key].append(row[key])
             
-            # Converts ISO 8601 format YYYY-MM-DDTHH:MM:SSZ to YYYY-MM-DD example 2024-11-07T11:40:48-0600 to 2024-11-07
+            # Converts ISO 8601 format YYYY-MM-DDTHH:MM:SSZ to YYYY-MM-DD
+            # Checks csv dict is not journal dict
             if "Entry Date" not in csv_dict.keys() and Utility.is_ISO8601(csv_dict['Date']):
                 return Utility.ISO8601_datetime_to_date(csv_dict, 'Date') 
             
@@ -53,7 +54,7 @@ class CSVHandling:
             writer.writeheader()
 
             for idx in range(len(dict_copy[fieldnames[0]])):
-                row = dict()
+                row = {}
 
                 for key in fieldnames:
                     row[key] = dict_copy[key][idx]

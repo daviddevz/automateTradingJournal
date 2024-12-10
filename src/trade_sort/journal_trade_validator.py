@@ -11,28 +11,9 @@ class JournalTradeValidator(TradeValidator):
         self.trade_exist_flag: bool = False
     
     def is_trade_multi_leg(self, trade_description: str, transaction_trade_idx: int) -> bool:
-        (self.trade_exist_flag, self.journal_trade_idx) = self.find_trade(trade_description)
-        self.transaction_trade_idx = transaction_trade_idx
-
-        transaction_date: str = self.transaction_dict_['Date'][self.transaction_trade_idx]
-        transaction_date = Utility.num_date_to_word_date(transaction_date)
-        journal_entry_date: str = self.journal_dict_["Entry Date"][self.journal_trade_idx]
-
-        transaction_exp_date: str = TradeProgress.get_expiration_date(self.transaction_dict_,
-                                                                None,self.transaction_trade_idx)
-        transaction_exp_date = Utility.num_date_to_word_date(transaction_exp_date)
-        journal_expiration_date: str = TradeProgress.get_expiration_date(None, self.journal_dict_,
-                                                                 self.journal_trade_idx)
-        
-        transaction_ticker: str = TradeProgress.get_ticker(self.transaction_dict_, None,
-                                                                 self.transaction_trade_idx)
-        journal_ticker: str = TradeProgress.get_ticker(None, self.journal_dict_,
-                                                                 self.journal_trade_idx)
-        
-        if (self.trade_exist_flag == False
-            and Utility.is_date_equal(journal_entry_date, transaction_date)
-            and Utility.is_date_equal(journal_expiration_date, transaction_exp_date)
-            and journal_ticker == transaction_ticker):
+        (self.trade_exist_flag, self.journal_trade_idx) = self.find_trade(trade_description, transaction_trade_idx)
+        print(f"trade_exist_flag: {self.trade_exist_flag} journal_trade_idx: {self.journal_trade_idx}") 
+        if (self.trade_exist_flag == False):
             return True
         
         else:
@@ -47,16 +28,44 @@ class JournalTradeValidator(TradeValidator):
             return False
     
     def get_journal_trade_idx(self) -> int:
+        print(f"journal_trade_idx in get_journal_trade_idx: {self.journal_trade_idx}")
         return self.journal_trade_idx
     
     # Returns tuple of trade_exist_flag and trade_idx
-    def find_trade(self, trade_description: str) -> tuple[bool, int]:
+    def find_trade(self, trade_description: str, transaction_trade_idx: int) -> tuple[bool, int]:
+        self.transaction_trade_idx = transaction_trade_idx
+
         for idx in range(len(self.journal_dict_["Trade Description"])):
             shortened_trade_description = super().splice_trade_description(trade_description)
 
+            #print(f"journal_dict: {self.journal_dict_['Trade Description']}")
+            print(f"shortened_trade_description: {shortened_trade_description}", 
+                  f"journal trade description: {self.journal_dict_['Trade Description'][idx]}")
+            
+            # Trade exists
             if shortened_trade_description in self.journal_dict_["Trade Description"][idx]:
                 return(True, idx)
             
-            else:
-                return(False, None)
+            # Multi leg trade exists but not recorded in journal
+            elif (TradeProgress.get_ticker(self.transaction_dict_, {}, self.transaction_trade_idx)
+            == TradeProgress.get_ticker({}, self.journal_dict_, idx)):
+                transaction_exp_date: str = TradeProgress.get_expiration_date(self.transaction_dict_,
+                                                                {}, self.transaction_trade_idx)
+                transaction_exp_date = Utility.num_date_to_word_date(transaction_exp_date)
+                transaction_exp_date = Utility.word_date_to_num_date(transaction_exp_date)
+
+                journal_expiration_date: str = TradeProgress.get_expiration_date({}, self.journal_dict_,
+                                                                 idx)
+                journal_expiration_date = Utility.num_date_to_word_date(journal_expiration_date)
+                journal_expiration_date = Utility.word_date_to_num_date(journal_expiration_date)
+
+                transaction_date: str = self.transaction_dict_['Date'][self.transaction_trade_idx]
+                journal_entry_date: str = self.journal_dict_["Entry Date"][idx]
+                journal_entry_date = Utility.word_date_to_num_date(journal_entry_date)
+                
+                if (Utility.is_date_equal(journal_expiration_date, transaction_exp_date)
+                and Utility.is_date_equal(journal_entry_date, transaction_date)):
+                    return(False, idx)
+            
+        return(False, None)
             

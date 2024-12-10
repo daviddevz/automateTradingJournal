@@ -18,9 +18,5 @@ class TradeValidator:
             splice = trade_description[trade_description.index('Bought') +7 
                                       :trade_description.index('@') -1]
             return splice
-    
-    def update_attr(self, journal_dict: dict, transaction_dict: dict) -> None:
-        self.journal_dict_ = journal_dict
-        self.transaction_dict_ = transaction_dict
 
     
