@@ -3,11 +3,10 @@ from src.trade_sort.utility import Utility
 class TradeProgress:
     def __init__(self, journal_dict: dict, transaction_dict: dict) -> None:
         self.journal_dict_ = journal_dict
-        self.transaction_dict_ = transaction_dict
         self.trade_progress_dict: dict = {}
         self.num_trades_open: int = 0
         self.num_trades_closed: int = 0
-        self.trade_progress: str = 'Opened'
+        self.trade_progress: str = 'Open'
     
     # Get the ticker from tradesTransDict or openTradesJournDict
     # Too specific that it may not be needed under utility class
@@ -62,14 +61,15 @@ class TradeProgress:
     def add_single_leg_trade(self, journal_dict_: dict, journal_trade_idx: int) -> None:
         self.journal_dict_ = journal_dict_
         self.trade_progress_dict[journal_trade_idx][2] += 1
+        self.check_previous_exp_date(journal_trade_idx)
 
     def add_multi_leg_trade(self, journal_dict_: dict, journal_trade_idx: int) -> None:
         self.journal_dict_ = journal_dict_
         self.trade_progress_dict[journal_trade_idx][2] += 1
+        self.check_previous_exp_date(journal_trade_idx)
 
     def close_trade(self, journal_dict_: dict, journal_trade_idx: int) -> None:
         self.journal_dict_ = journal_dict_
-        print(self.trade_progress_dict[journal_trade_idx])
         self.trade_progress_dict[journal_trade_idx][3] += 1
         self.check_previous_exp_date(journal_trade_idx)
 
@@ -84,22 +84,24 @@ class TradeProgress:
         
         for idx in range(journal_trade_idx - 1, -1, -1):
             exp_date = self.get_expiration_date({}, self.journal_dict_, idx)
-            print(f"exp_date: {exp_date}")
             exp_date = Utility.num_date_to_word_date(exp_date)
             exp_date = Utility.word_date_to_num_date(exp_date)
 
-            if Utility.is_date_greater(exp_date, curren_entry_date):
-                if self.trade_progress_dict[idx][2] == self.trade_progress_dict[idx][3]:
-                    self.trade_progress_dict[idx][-1] = "Closed"
+            if self.trade_progress_dict[journal_trade_idx][-1] == "Close":
+                continue
+
+            elif Utility.is_date_greater(exp_date, curren_entry_date):
+                if (self.trade_progress_dict[journal_trade_idx][2]
+                == self.trade_progress_dict[journal_trade_idx][3]):
+                    self.trade_progress_dict[journal_trade_idx][-1] = "Close"
 
                 else:
                     # Single or some part of multi leg trade exipred worthless
                     # and was not closed or recorded as a trade in csv
-                    self.trade_progress_dict[idx][-1] = "Closed"
+                    self.trade_progress_dict[journal_trade_idx][-1] = "Close"
 
             else:
-                print(f"self.trade_progress_dict: {self.trade_progress_dict}")
-                self.trade_progress_dict[idx][-1] = "Opened"
+                self.trade_progress_dict[journal_trade_idx][-1] = "Open"
             
 
     def get_progress(self, journal_trade_idx: int) -> str:
@@ -108,14 +110,18 @@ class TradeProgress:
     """ set_progress loop through journal and determines the following in a dictionary
     format: {"journal trade idx": ["expiration date", "ticker", "num of trades opened",
     "num of trades closed", "progress"}"""
-    def update_progress(self, journal_trade_idx: int) -> None:
+    def update_progress(self, journal_trade_idx: int, journal_dict: dict) -> None:
+        self.journal_dict_ = journal_dict
         journal_exp_date: str = self.get_expiration_date({}, self.journal_dict_, journal_trade_idx)
         journal_ticker: str = self.get_ticker({}, self.journal_dict_, journal_trade_idx)
 
         self.trade_progress_dict[journal_trade_idx] = [journal_exp_date, journal_ticker]
         self.trade_progress_dict[journal_trade_idx].append(self.num_trades_open)
         self.trade_progress_dict[journal_trade_idx].append(self.num_trades_closed)
-        self.trade_progress_dict[journal_trade_idx].append(self.trade_progress)
 
-        print(f"self.trade_progress_dict in update_progress: {self.trade_progress_dict}")
-    
+        if self.journal_dict_['Progress'][journal_trade_idx] == 'Close':
+            self.trade_progress = 'Close'
+            self.trade_progress_dict[journal_trade_idx].append(self.trade_progress)
+
+        else:
+            self.trade_progress_dict[journal_trade_idx].append(self.trade_progress)  

@@ -1,187 +1,214 @@
-,Entry Date,Exit Date,Trade Description,,Strategies,Open Price,Close Price,"Initial Margin
+Entry Date,Exit Date,Trade Description,Strategies,Open Price,Close Price,"Initial Margin
 Requirement",Progress,Comm & Fees,P/L
-,Nov 16 2023,Mar 4 2024,"Sold 2 QQQ 06/21/24 Put 346.00 @ 8.15
+Nov 16 2023,Mar 4 2024,"Sold 2 QQQ 06/21/24 Put 346.00 @ 8.15
 Bought 1 QQQ 06/21/24 Put 349.00 @ 8.68
 Bought 1 QQQ 06/21/24 Put 340.00 @ 7.17
-",,Short Put Spread,$45.00,-$5.00,$255.00,Close,-$5.051,$34.95
-,Nov 16 2023,Mar 21 2024,"Bought 1 QQQ 06/28/24 Put 333.00 @ 6.40
+",Short Put Spread,$45.00,-$5.00,$255.00,Close,-$5.051,34.949
+Nov 16 2023,Mar 21 2024,"Bought 1 QQQ 06/28/24 Put 333.00 @ 6.40
 Bought 1 QQQ 06/28/24 Put 342.00 @ 7.73
 Sold 2 QQQ 06/28/24 Put 339.00 @ 7.26
-",,Short Put Spread,$39.00,-$5.00,$261.00,Close,-$5.041,$28.96
-,Nov 16 2023,Jan 19 2024,"Bought 1 SPY 03/28/24 Put 415.00 @ 5.03
+",Short Put Spread,$39.00,-$5.00,$261.00,Close,-$5.041,28.959
+Nov 16 2023,Jan 19 2024,"Bought 1 SPY 03/28/24 Put 415.00 @ 5.03
 Bought 1 SPY 03/28/24 Put 424.00 @ 6.31
 Sold 2 SPY 03/28/24 Put 421.00 @ 5.83
-",,Short Put Spread,$32.00,-$5.00,$268.00,Close,-$5.031,$21.97
-,Nov 16 2023,Mar 13 2024,"Sold 2 SPY 06/21/24 Put 412.00 @ 7.72
+",Short Put Spread,$32.00,-$5.00,$268.00,Close,-$5.031,21.969
+Nov 16 2023,Mar 13 2024,"Sold 2 SPY 06/21/24 Put 412.00 @ 7.72
 Bought 1 SPY 06/21/24 Put 415.00 @ 8.21
 Bought 1 SPY 06/21/24 Put 405.00 @ 6.76
-",,Short Put Spread,$47.00,-$5.00,$253.00,Close,-$5.041,$36.96
-,Dec 7 2023,Jan 9 2024,"Sold 1 EEM 02/16/24 Put 36.00 @ 0.28
-Sold 1 EEM 02/16/24 Call 41.50 @ 0.26",,Short Put,$54.00,-$25.00,$551.10,Close,-$2.524,$26.48
-,Jan 3 2024,Jan 25 2024,"Sold 1 /MCLJ4 MCOJ4 03/15/24 Call 85.75 @ 0.8
-Sold 1 /MCLJ4 MCOJ4 03/15/24 Put 62.00 @ 1.12",,Short Put,$192.00,-$105.00,$399.00,Close,-$7.280,$79.72
-,Jan 5 2024,Jan 18 2024,"Bought 1 XLE 02/16/24 Put 77.00 @ 0.36
+",Short Put Spread,$47.00,-$5.00,$253.00,Close,-$5.041,36.959
+Dec 7 2023,Jan 9 2024,"Sold 1 EEM 02/16/24 Put 36.00 @ 0.28
+Sold 1 EEM 02/16/24 Call 41.50 @ 0.26",Short Put,$54.00,-$25.00,$551.10,Close,-$2.524,26.476
+Jan 3 2024,Jan 25 2024,"Sold 1 /MCLJ4 MCOJ4 03/15/24 Call 85.75 @ 0.8
+Sold 1 /MCLJ4 MCOJ4 03/15/24 Put 62.00 @ 1.12",Short Put,$192.00,-$105.00,$399.00,Close,-$7.280,79.72
+Jan 5 2024,Jan 18 2024,"Bought 1 XLE 02/16/24 Put 77.00 @ 0.36
 Bought 1 XLE 02/16/24 Put 82.00 @ 1.13
-Sold 2 XLE 02/16/24 Put 81.00 @ 0.89",,Short Put Spread,$29.00,-$100.00,$271.00,Close,-$5.062,-$76.06
-,Jan 5 2024,Jan 18 2024,Sold 1 XLU 02/16/24 Put 63.00 @ 0.74,,Short Put,$74.00,-$213.00,"$1,126.00",Close,-$1.273,-$140.27
-,Jan 5 2024,Jan 19 2024,"Bought 1 QQQ 03/15/24 Call 434.78 @ 1.62
+Sold 2 XLE 02/16/24 Put 81.00 @ 0.89",Short Put Spread,$29.00,-$100.00,$271.00,Close,-$5.062,-76.062
+Jan 5 2024,Jan 18 2024,Sold 1 XLU 02/16/24 Put 63.00 @ 0.74,Short Put,$74.00,-$213.00,"$1,126.00",Close,-$1.273,-140.273
+Jan 5 2024,Jan 19 2024,"Bought 1 QQQ 03/15/24 Call 434.78 @ 1.62
 Sold 1 QQQ 03/15/24 Call 430.00 @ 2.30
 Sold 1 QQQ 03/15/24 Put 367.78 @ 2.89
-Bought 1 QQQ 03/15/24 Put 363.78 @ 2.48",,Short Put Spread,$109.00,-$210.00,$369.00,Close,-$5.092,-$106.09
-,Jan 9 2024,Jan 19 2024,"Bought 1 /SIH4 SOG4 01/25/24 Call 24.200 @ 0.164
-Sold 1 /SIH4 SOG4 01/25/24 Call 24.150 @ 0.173",,Short Call Spread,$45.00,-$10.00,$205.00,Close,-$12.280,$22.72
-,Jan 10 2024,Feb 1 2024,"Bought 1 XOP 02/02/24 Call 141.00 @ 0.76
-Sold 1 XOP 02/02/24 Call 138.50 @ 1.22",,Short Call Spread,$46.00,-$6.00,$204.00,Close,-$2.273,$37.73
-,Jan 10 2024,Jan 19 2024,"Sold 1 SMH 02/02/24 Put 172.00 @ 3.80
-Bought 1 SMH 02/02/24 Put 169.00 @ 2.60",,Short Put Spread,$120.00,-$16.00,$180.00,Close,-$2.546,$101.45
-,Jan 10 2024,Feb 23 2024,"Sold 1 IWM 03/15/24 Call 212.00 @ 1.38
+Bought 1 QQQ 03/15/24 Put 363.78 @ 2.48",Short Put Spread,$109.00,-$210.00,$369.00,Close,-$5.092,-106.092
+Jan 9 2024,Jan 19 2024,"Bought 1 /SIH4 SOG4 01/25/24 Call 24.200 @ 0.164
+Sold 1 /SIH4 SOG4 01/25/24 Call 24.150 @ 0.173",Short Call Spread,$45.00,-$10.00,$205.00,Close,-$12.280,22.72
+Jan 10 2024,Feb 1 2024,"Bought 1 XOP 02/02/24 Call 141.00 @ 0.76
+Sold 1 XOP 02/02/24 Call 138.50 @ 1.22",Short Call Spread,$46.00,-$6.00,$204.00,Close,-$2.273,37.727
+Jan 10 2024,Jan 19 2024,"Sold 1 SMH 02/02/24 Put 172.00 @ 3.80
+Bought 1 SMH 02/02/24 Put 169.00 @ 2.60",Short Put Spread,$120.00,-$16.00,$180.00,Close,-$2.546,101.454
+Jan 10 2024,Feb 23 2024,"Sold 1 IWM 03/15/24 Call 212.00 @ 1.38
 Sold 1 IWM 03/15/24 Put 179.00 @ 1.60
 Bought 1 IWM 03/15/24 Call 215.00 @ 0.99
-Bought 1 IWM 03/15/24 Put 176.00 @ 1.25",,Short Call Spread,$74.00,-$35.00,$226.00,Close,-$5.092,$33.91
-,Jan 19 2024,Feb 6 2024,"Sold 1 XLU 02/09/24 Call 62.50 @ 0.35
-Bought 1 XLU 02/09/24 Call 64.50 @ 0.08",,Short Call Spread,$27.00,-$2.00,$173.00,Close,-$2.403,$22.60
-,Jan 22 2024,Feb 7 2024,"Bought 1 SPY 02/16/24 Put 481.00 @ 3.82
-Sold 1 SPY 02/16/24 Put 484.00 @ 4.87",,Short Put Spread,$105.00,-$10.00,$95.00,Close,-$2.546,$92.45
-,Jan 24 2024,Feb 1 2024,"Sold 1 KRE 03/15/24 Put 49.00 @ 0.80
-Bought 1 KRE 03/15/24 Put 43.00 @ 0.16",,Short Put,$64.00,-$168.00,$536.00,Close,-$2.546,-$106.55
-,Jan 24 2024,Mar 6 2024,"Bought 1 /ZWK4 OZWJ4 03/22/24 Call 720.00 @ 5.125
+Bought 1 IWM 03/15/24 Put 176.00 @ 1.25",Short Call Spread,$74.00,-$35.00,$226.00,Close,-$5.092,33.908
+Jan 19 2024,Feb 6 2024,"Sold 1 XLU 02/09/24 Call 62.50 @ 0.35
+Bought 1 XLU 02/09/24 Call 64.50 @ 0.08",Short Call Spread,$27.00,-$2.00,$173.00,Close,-$2.403,22.597
+Jan 22 2024,Feb 7 2024,"Bought 1 SPY 02/16/24 Put 481.00 @ 3.82
+Sold 1 SPY 02/16/24 Put 484.00 @ 4.87",Short Put Spread,$105.00,-$10.00,$95.00,Close,-$2.546,92.454
+Jan 24 2024,Feb 1 2024,"Sold 1 KRE 03/15/24 Put 49.00 @ 0.80
+Bought 1 KRE 03/15/24 Put 43.00 @ 0.16",Short Put,$64.00,-$168.00,$536.00,Close,-$2.546,-106.546
+Jan 24 2024,Mar 6 2024,"Bought 1 /ZWK4 OZWJ4 03/22/24 Call 720.00 @ 5.125
 Bought 1 /ZWK4 OZWJ4 03/22/24 Put 555.00 @ 4.5
 Sold 1 /ZWK4 OZWJ4 03/22/24 Call 715.00 @ 5.5
-Sold 1 /ZWK4 OZWJ4 03/22/24 Put 560.00 @ 5.25",,Short Put Spread,$56.25,-$168.75,$193.75,Close,-$29.360,-$141.86
-,Jan 26 2024,Feb 16 2024,"Sold 1 EFA 03/28/24 Put 73.00 @ 0.72
-Bought 1 EFA 03/28/24 Put 68.00 @ 0.21",,Short Put,$51.00,-$25.00,$449.00,Close,-$2.546,$23.45
-,Jan 26 2024,Mar 22 2024,"Bought 1 /SIK4 SOJ4 03/25/24 Call 25.700 @ 0.17
+Sold 1 /ZWK4 OZWJ4 03/22/24 Put 560.00 @ 5.25",Short Put Spread,$56.25,-$168.75,$193.75,Close,-$29.360,-141.86
+Jan 26 2024,Feb 16 2024,"Sold 1 EFA 03/28/24 Put 73.00 @ 0.72
+Bought 1 EFA 03/28/24 Put 68.00 @ 0.21",Short Put,$51.00,-$25.00,$449.00,Close,-$2.546,23.454
+Jan 26 2024,Mar 22 2024,"Bought 1 /SIK4 SOJ4 03/25/24 Call 25.700 @ 0.17
 Bought 1 /SIK4 SOJ4 03/25/24 Put 21.200 @ 0.157
 Sold 1 /SIK4 SOJ4 03/25/24 Call 25.600 @ 0.18
-Sold 1 /SIK4 SOJ4 03/25/24 Put 21.300 @ 0.172",,Short Call Spread,$125.00,-$25.00,$375.00,Close,-$25.360,$74.64
-,Jan 29 2024,Mar 1 2024,"Sold 2 OIH 03/08/24 Put 287.50 @ 4.77
+Sold 1 /SIK4 SOJ4 03/25/24 Put 21.300 @ 0.172",Short Call Spread,$125.00,-$25.00,$375.00,Close,-$25.360,74.64
+Jan 29 2024,Mar 1 2024,"Sold 2 OIH 03/08/24 Put 287.50 @ 4.77
 Bought 1 OIH 03/08/24 Put 290.00 @ 5.43
-Bought 1 OIH 03/08/24 Put 282.50 @ 3.71",,Short Put,$40.00,-$4.00,$210.00,Close,-$5.062,$30.94
-,Jan 29 2024,Mar 13 2024,"Sold 1 EWW 03/15/24 Put 63.00 @ 0.95
-Bought 1 EWW 03/15/24 Put 57.00 @ 0.27",,Short Put Spread,$68.00,-$7.00,$532.00,Close,-$2.546,$58.45
-,Jan 29 2024,Mar 7 2024,"Bought 1 /GCJ4 OGJ4 03/25/24 Call 2160.00 @ 7.7
+Bought 1 OIH 03/08/24 Put 282.50 @ 3.71",Short Put,$40.00,-$4.00,$210.00,Close,-$5.062,30.938
+Jan 29 2024,Mar 13 2024,"Sold 1 EWW 03/15/24 Put 63.00 @ 0.95
+Bought 1 EWW 03/15/24 Put 57.00 @ 0.27",Short Put Spread,$68.00,-$7.00,$532.00,Close,-$2.546,58.454
+Jan 29 2024,Mar 7 2024,"Bought 1 /GCJ4 OGJ4 03/25/24 Call 2160.00 @ 7.7
 Bought 1 /GCJ4 OGJ4 03/25/24 Put 1955.00 @ 6.3
 Sold 1 /GCJ4 OGJ4 03/25/24 Call 2155.00 @ 8.2
-Sold 1 /GCJ4 OGJ4 03/25/24 Put 1960.00 @ 7.0",,Short Put,$120.00,-$270.00,$380.00,Close,-$25.360,-$175.36
-,Feb 2 2024,Feb 16 2024,"Sold 1 OIH 02/16/24 Call 302.50 @ 2.10
-Bought 1 OIH 02/16/24 Call 305.00 @ 1.66",,Short Call Spread,$44.00,-$7.00,$206.00,Close,-$2.546,$34.45
-,Feb 2 2024,Mar 4 2024,"Bought 1 /HGK4 HXEJ4 03/25/24 Call 4.17 @ 0.0195
+Sold 1 /GCJ4 OGJ4 03/25/24 Put 1960.00 @ 7.0",Short Put,$120.00,-$270.00,$380.00,Close,-$25.360,-175.36
+Feb 2 2024,Feb 16 2024,"Sold 1 OIH 02/16/24 Call 302.50 @ 2.10
+Bought 1 OIH 02/16/24 Call 305.00 @ 1.66",Short Call Spread,$44.00,-$7.00,$206.00,Close,-$2.546,34.454
+Feb 2 2024,Mar 4 2024,"Bought 1 /HGK4 HXEJ4 03/25/24 Call 4.17 @ 0.0195
 Bought 1 /HGK4 HXEJ4 03/25/24 Put 3.59 @ 0.0175
 Sold 1 /HGK4 HXEJ4 03/25/24 Call 4.15 @ 0.0215
-Sold 1 /HGK4 HXEJ4 03/25/24 Put 3.61 @ 0.02",,Short Put,$112.50,-$37.50,$387.50,Close,-$25.360,$49.64
-,Feb 13 2024,Mar 14 2024,"Bought 1 MARA 04/19/24 Put 24.00 @ 4.45
+Sold 1 /HGK4 HXEJ4 03/25/24 Put 3.61 @ 0.02",Short Put,$112.50,-$37.50,$387.50,Close,-$25.360,49.64
+Feb 13 2024,Mar 14 2024,"Bought 1 MARA 04/19/24 Put 24.00 @ 4.45
 Sold 1 MARA 04/19/24 Put 21.00 @ 2.84
 Sold 1 MARA 04/19/24 Put 21.00 @ 2.83
 Bought 1 MARA 04/19/24 Put 14.00 @ 0.61
-",,Short Put,$61.00,-$170.00,$339.00,Close,-$5.082,-$114.08
-,Feb 20 2024,Feb 27 2024,"Bought 1 XBI 03/15/24 Put 88.50 @ 1.60
+",Short Put,$61.00,-$170.00,$339.00,Close,-$5.082,-114.082
+Feb 20 2024,Feb 27 2024,"Bought 1 XBI 03/15/24 Put 88.50 @ 1.60
 Sold 1 XBI 03/15/24 Put 91.50 @ 2.73
-",,Short Put Spread,$113.00,-$10.00,$187.00,Close,-$2.546,$100.45
-,Feb 23 2024,Mar 13 2024,"Sold 1 IWM 03/15/24 Put 200.00 @ 3.54
-Bought 1 IWM 03/15/24 Put 197.00 @ 2.37",,Short Put Spread,$117.00,-$10.00,$183.00,Close,-$2.546,$104.45
-,Feb 23 2024,Mar 27 2024,"Sold 1 IYR 04/19/24 Put 85.00 @ 1.26
+",Short Put Spread,$113.00,-$10.00,$187.00,Close,-$2.546,100.454
+Feb 23 2024,Mar 13 2024,"Sold 1 IWM 03/15/24 Put 200.00 @ 3.54
+Bought 1 IWM 03/15/24 Put 197.00 @ 2.37",Short Put Spread,$117.00,-$10.00,$183.00,Close,-$2.546,104.454
+Feb 23 2024,Mar 27 2024,"Sold 1 IYR 04/19/24 Put 85.00 @ 1.26
 Bought 1 IYR 04/19/24 Put 80.00 @ 0.45
-",,Short Put,$81.00,-$20.00,$419.00,Close,-$2.546,$58.45
-,Mar 4 2024,Mar 28 2024,"Bought 1 XME 04/19/24 Put 50.00 @ 0.17
-Sold 1 XME 04/19/24 Put 55.00 @ 0.82",,Short Put,$65.00,-$15.00,$435.00,Close,-$2.546,$47.45
-,Mar 7 2024,Mar 20 2024,"Sold 1 XLU 04/19/24 Put 62.00 @ 0.86
-Bought 1 XLU 04/19/24 Put 57.00 @ 0.14",,Short Put,$72.00,-$35.00,$428.00,Close,-$2.546,$34.45
-,Mar 7 2024,Apr 5 2024,"Sold 1 TLT 04/19/24 Put 93.00 @ 0.73
-Bought 1 TLT 04/19/24 Put 90.00 @ 0.26",,Short Put,$47.00,-$126.00,$253.00,Close,-$2.546,-$81.55
-,Mar 7 2024,Mar 27 2024,"Sold 1 KRE 04/19/24 Put 46.00 @ 0.94
-Bought 1 KRE 04/19/24 Put 41.00 @ 0.23",,Short Put,$71.00,-$20.00,$429.00,Close,-$2.546,$48.45
-,Mar 8 2024,Mar 13 2024,"Bought 1 /HGK4 HXEJ4 03/25/24 Put 3.87 @ 0.045
-Sold 1 /HGK4 HXEJ4 03/25/24 Put 3.88 @ 0.05",,Short Put Spread,$125.00,-$25.00,$175.00,Close,-$12.680,$87.32
-,Mar 8 2024,Apr 18 2024,"Bought 1 /ZWK4 OZWK4 04/26/24 Call 595.00 @ 8.25
-Sold 1 /ZWK4 OZWK4 04/26/24 Call 590.00 @ 9.125",,Short Call Spread,$43.75,-$6.25,$206.25,Close,-$14.680,$22.82
-,Mar 12 2024,Mar 22 2024,"Sold 1 XOP 04/05/24 Put 143.00 @ 3.30
+",Short Put,$81.00,-$20.00,$419.00,Close,-$2.546,58.454
+Mar 4 2024,Mar 28 2024,"Bought 1 XME 04/19/24 Put 50.00 @ 0.17
+Sold 1 XME 04/19/24 Put 55.00 @ 0.82",Short Put,$65.00,-$15.00,$435.00,Close,-$2.546,47.454
+Mar 7 2024,Mar 20 2024,"Sold 1 XLU 04/19/24 Put 62.00 @ 0.86
+Bought 1 XLU 04/19/24 Put 57.00 @ 0.14",Short Put,$72.00,-$35.00,$428.00,Close,-$2.546,34.454
+Mar 7 2024,Apr 5 2024,"Sold 1 TLT 04/19/24 Put 93.00 @ 0.73
+Bought 1 TLT 04/19/24 Put 90.00 @ 0.26",Short Put,$47.00,-$126.00,$253.00,Close,-$2.546,-81.546
+Mar 7 2024,Mar 27 2024,"Sold 1 KRE 04/19/24 Put 46.00 @ 0.94
+Bought 1 KRE 04/19/24 Put 41.00 @ 0.23",Short Put,$71.00,-$20.00,$429.00,Close,-$2.546,48.454
+Mar 8 2024,Mar 13 2024,"Bought 1 /HGK4 HXEJ4 03/25/24 Put 3.87 @ 0.045
+Sold 1 /HGK4 HXEJ4 03/25/24 Put 3.88 @ 0.05",Short Put Spread,$125.00,-$25.00,$175.00,Close,-$12.680,87.32
+Mar 8 2024,Apr 18 2024,"Bought 1 /ZWK4 OZWK4 04/26/24 Call 595.00 @ 8.25
+Sold 1 /ZWK4 OZWK4 04/26/24 Call 590.00 @ 9.125",Short Call Spread,$43.75,-$6.25,$206.25,Close,-$14.680,22.82
+Mar 12 2024,Mar 22 2024,"Sold 1 XOP 04/05/24 Put 143.00 @ 3.30
 Bought 1 XOP 04/05/24 Put 140.00 @ 2.00
-",,Short Put Spread,$130.00,-$14.00,$170.00,Close,-$2.546,$113.45
-,Mar 12 2024,Mar 27 2024,"Sold 1 RSP 04/19/24 Put 162.00 @ 1.26
+",Short Put Spread,$130.00,-$14.00,$170.00,Close,-$2.546,113.454
+Mar 12 2024,Mar 27 2024,"Sold 1 RSP 04/19/24 Put 162.00 @ 1.26
 Bought 1 RSP 04/19/24 Put 157.00 @ 0.55
-",,Short Put,$71.00,-$15.00,$429.00,Close,-$2.546,$53.45
-,Mar 12 2024,Apr 15 2024,"Sold 1 XLP 04/26/24 Put 75.00 @ 0.69
+",Short Put,$71.00,-$15.00,$429.00,Close,-$2.546,53.454
+Mar 12 2024,Apr 15 2024,"Sold 1 XLP 04/26/24 Put 75.00 @ 0.69
 Bought 1 XLP 04/26/24 Put 70.00 @ 0.09
-",,Short Put,$60.00,-$151.00,$440.00,Close,-$2.546,-$93.55
-,Mar 13 2024,May 16 2024,Bought 15 RSP @ 166.55,,Stock Holding,"-$2,498.25","$2,524.54","$2,498.25",Close,-$0.056,$26.23
-,Mar 13 2024,Apr 2 2024,"Sold 1 RIOT 04/05/24 Call 14.00 @ 0.64
+",Short Put,$60.00,-$151.00,$440.00,Close,-$2.546,-93.546
+Mar 13 2024,Apr 2 2024,"Sold 1 RIOT 04/05/24 Call 14.00 @ 0.64
 Bought 1 RIOT 04/05/24 Call 16.50 @ 0.34
-",,Short Call Spread,$30.00,-$3.00,$220.00,Close,-$2.546,$24.45
-,Mar 13 2024,Apr 16 2024,Sold 1 EWZ 04/26/24 Put 31.50 @ 0.47,,Short Put,$47.00,-$13.00,$538.38,Close,-$1.273,$32.73
-,Mar 14 2024,Apr 16 2024,"Bought 1 SPY 04/19/24 Put 509.00 @ 5.98
+",Short Call Spread,$30.00,-$3.00,$220.00,Close,-$2.546,24.454
+Mar 13 2024,Apr 16 2024,Sold 1 EWZ 04/26/24 Put 31.50 @ 0.47,Short Put,$47.00,-$13.00,$538.38,Close,-$1.273,32.727
+Mar 14 2024,Apr 16 2024,"Bought 1 SPY 04/19/24 Put 509.00 @ 5.98
 Sold 1 SPY 04/19/24 Put 512.00 @ 7.14
-",,Short Put Spread,$116.00,-$226.00,$184.00,Close,-$2.546,-$112.55
-,Mar 14 2024,Mar 26 2024,"Bought 1 /LEJ4 LEJ4 04/05/24 Put 186.00 @ 1.5
+",Short Put Spread,$116.00,-$226.00,$184.00,Close,-$2.546,-112.546
+Mar 14 2024,Mar 26 2024,"Bought 1 /LEJ4 LEJ4 04/05/24 Put 186.00 @ 1.5
 Sold 1 /LEJ4 LEJ4 04/05/24 Put 187.00 @ 1.875
-",,Short Put Spread,$150.00,-$320.00,$250.00,Close,-$14.680,-$184.68
-,Mar 14 2024,Mar 28 2024,"Bought 1 DIA 04/05/24 Put 386.00 @ 2.58
+",Short Put Spread,$150.00,-$320.00,$250.00,Close,-$14.680,-184.68
+Mar 14 2024,Mar 28 2024,"Bought 1 DIA 04/05/24 Put 386.00 @ 2.58
 Sold 1 DIA 04/05/24 Put 389.00 @ 3.70
-",,Short Put Spread,$112.00,-$10.00,$188.00,Close,-$2.546,$99.45
-,Mar 15 2024,Apr 8 2024,"Sold 1 EWW 04/19/24 Put 67.00 @ 1.38
-Bought 1 EWW 04/19/24 Put 64.00 @ 0.57",,Short Put Spread,$81.00,-$10.00,$219.00,Close,-$2.546,$68.45
-,Mar 15 2024,Apr 8 2024,"Bought 1 ETSY 04/12/24 Call 75.00 @ 0.77
-Sold 1 ETSY 04/12/24 Call 73.00 @ 1.11",,Short Call Spread,$34.00,-$7.00,$166.00,Close,-$2.546,$24.45
-,Mar 15 2024,Apr 5 2024,"Bought 1 /MCLK4 MCOK4 04/17/24 Put 77.50 @ 1.37
-Sold 1 /MCLK4 MCOK4 04/17/24 Put 80.50 @ 2.51",,Short Put Spread,$114.00,-$11.00,$186.00,Close,-$7.280,$95.72
-,Mar 19 2024,Apr 5 2024,"Sold 1 TLT 04/12/24 Call 95.00 @ 0.49
-Bought 1 TLT 04/12/24 Call 97.00 @ 0.18",,Short Call Spread,$31.00,-$7.00,$169.00,Close,-$2.546,$21.45
-,Mar 22 2024,Apr 15 2024,"Sold 1 IWM 04/19/24 Put 205.00 @ 3.35
-Bought 1 IWM 04/19/24 Put 202.00 @ 2.27",,Short Put Spread,$108.00,-$252.00,$192.00,Close,-$2.546,-$146.55
-,Mar 22 2024,Apr 15 2024,"Sold 1 COIN 04/19/24 Put 257.50 @ 23.41
-Bought 1 COIN 04/19/24 Put 255.00 @ 22.05",,Short Put Spread,$136.00,-$187.00,$114.00,Close,-$2.566,-$53.57
-,Mar 22 2024,Apr 11 2024,"Sold 1 XLY 04/12/24 Put 182.50 @ 2.25
-Bought 1 XLY 04/12/24 Put 179.00 @ 1.15",,Short Put Spread,$110.00,-$254.00,$240.00,Close,-$2.546,-$146.55
-,Mar 26 2024,Apr 5 2024,"Bought 1 MCD 04/19/24 Call 290.00 @ 0.79
-Sold 1 MCD 04/19/24 Call 287.5 @ 1.24",,Short Call Spread,$45.00,-$4.00,$205.00,Close,-$2.546,$38.45
-,Mar 26 2024,Apr 11 2024,"Bought 1 EA 04/19/24 Call 139 @ 0.40
-Sold 1 EA 04/19/24 Call 136 @ 0.92",,Short Call Spread,$52.00,-$7.00,$248.00,Close,-$2.546,$42.45
-,Mar 28 2024,Apr 11 2024,"Bought 1 /ZCK4 OZCK4 04/26/24 Call 470.00 @ 2.875
-Sold 1 /ZCK4 OZCK4 04/26/24 Call 465.00 @ 3.625",,Short Call Spread,$37.50,-$6.25,$262.50,Close,-$14.680,$16.57
-,Mar 28 2024,Apr 5 2024,"Sold 1 GLD 04/19/24 Put 205.00 @ 2.24
-Bought 1 GLD 04/19/24 Put 202.50 @ 1.21",,Short Put Spread,$103.00,-$10.00,$197.00,Close,-$2.546,$90.45
-,Mar 28 2024,Apr 15 2024,"Sold 1 SMH 04/19/24 Put 225.00 @ 5.72
-Bought 1 SMH 04/19/24 Put 222.50 @ 4.60",,Short Put Spread,$112.00,-$135.00,$188.00,Close,-$2.546,-$25.55
-,Mar 28 2024,May 14 2024,"Sold 1 BITO 04/17/24 Put 27.00 @ 2.04
-Bought 1 BITO 04/17/24 Put 22.00 @ 0.60",,Short Put,$144.00,-$206.00,$356.00,Close,-$2.546,-$64.55
-,Apr 2 2024,Apr 30 2024,"Sold 1 /LE 05/03/24 Call 182.00 @ 1.225
-Bought 1 /LE 05/03/24 Call 183.00 @ 1.025",,Short Call Spread,$80.00,-$10.00,$320.00,Close,-$14.680,$55.32
-,Apr 2 2024,May 3 2024,"Sold 1 XLU 05/17/24 Put 64.00 @ 0.76
-Bought 1 XLU 05/17/24 Put 59.00 @ 0.12        ",,Short Put,$64.00,-$6.00,$436.00,Close,-$2.503,$55.50
-,Apr 15 2024,May 7 2024,"Sold 1 KRE 05/17/24 Call 50.00 @ 0.62
-Bought 1 KRE 05/17/24 Call 52.00 @ 0.28",,Short Call Spread,$34.00,-$80.00,$166.00,Close,-$2.546,-$48.55
-,Apr 15 2024,May 15 2024,"Sold 1 XLV 05/17/24 Call 144.00 @ 0.85
-Bought 1 XLV 05/17/24 Call 146.00 @ 0.45",,Short Call Spread,$40.00,-$149.00,$160.00,Close,-$2.546,-$111.55
-,Apr 15 2024,May 3 2024,"Sold 1 GLD 05/10/24 Put 217.5.00 @ 3.57
-Bought 1 GLD 05/10/24 Put 215.00 @ 2.51",,Short Put Spread,$106.00,-$220.00,$144.00,Close,-$2.546,-$116.55
-,Apr 18 2024,May 7 2024,"Sold 1 IWM 05/17/24 Call 202.00 @ 1.67
-Bought 1 IWM 05/17/24 Call 204.00 @ 1.22",,Short Call Spread,$45.00,-$137.00,$205.00,Close,-$2.546,-$94.55
-,Apr 23 2024,May 16 2024,"Sold 1 XLP 06/21/24 Put 74.00 @ 0.74
-Bought 1 XLP 06/21/24 Put 69.00 @ 0.15",,Short Put Spread,$59.00,-$6.00,$441.00,Close,-$2.546,$50.45
-,Apr 23 2024,May 2 2024,"Bought 1 /MCLM4 MCOM4 05/16/24 Put 80.75 @ 0.73
-Sold 1 /MCLM4 MCOM4 05/16/24 Put 83.75 @ 1.80",,Short Put Spread,$107.00,-$250.00,$193.00,Close,-$7.280,-$150.28
-,Apr 23 2024,May 17 2024,"Bought 1 EEM 06/21/24 Put 37.00 @ 0.13
-Sold 1 EEM 06/21/24 Put 41.00 @ 0.88",,Short Put,$75.00,-$7.00,$325.00,Close,-$2.546,$65.45
-,Apr 23 2024,May 22 2024,"Sold 1 XME 06/21/24 Put 58.00 @ 1.04
-Bought 1 XME 06/21/24 Put 53.00 @ 0.27",,Short Put,$77.00,-$16.00,$423.00,Close,-$2.546,$58.45
-,May 3 2024,May 22 2024,"Bought 1 /ZCN4 OZCM4 05/24/24 Put 455.00 @ 6.25
-Sold 1 /ZCN4 OZCM4 05/24/24 Put 460.00 @ 8.5",,Short Put Spread,$112.50,-$93.75,$137.50,Close,-$14.680,$4.07
-,May 7 2024,,"Sold 1 KRE 06/21/24 Put 48.00 @ 0.79
-Bought 1 KRE 06/21/24 Put 43.00 @ 0.16",,Short Put Spread,$63.00,,$437.00,Open,-$2.273,
-,May 7 2024,May 23 2024,"Bought 1 SMH 05/31/24 Put 220.00 @ 5.38
-Sold 1 SMH 05/31/24 Put 222.50 @ 6.50",,Short Put Spread,$112.00,-$9.00,$138.00,Close,-$2.546,$100.45
-,May 7 2024,Jun 4 2024,"Bought 1 XLY 06/21/24 Put 176.00 @ 2.50
-Sold 1 XLY 06/21/24 Put 179.00 @ 3.55",,Short Put Spread,$105.00,,-$195.00,Close,-$2.273,
-,May 14 2024,May 21 2024,"Bought 1 /LEM4 LEM4 06/07/24 Call 184.00 @ 0.625
-Sold 1 /LEM4 LEM4 06/07/24 Call 183.00 @ 0.8",,Short Call Spread,$70.00,-$170.00,$330.00,Close,-$14.680,-$114.68
-,May 14 2024,May 16 2024,"Bought 1 /MCLN4 MCON4 06/14/24 Call 83.75 @ 0.47
-Sold 1 /MCLN4 MCON4 06/14/24 Call 81.75 @ 0.81",,Short Call Spread,$34.00,-$43.00,$166.00,Close,-$7.280,-$16.28
-,May 22 2024,,"Bought 1 COIN 06/21/24 Put 227.5 @ 17.84
-Sold 1 COIN 06/21/24 Put 230.00 @ 19.20",,Short Put Spread,$136.00,,$114.00,Open,-$2.323,
-,May 22 2024,,"Bought 1 XBI 06/21/24 Put 90.00 @ 1.58
-Sold 1 XBI 06/21/24 Put 92.00 @ 2.38 ",,Short Put Spread,$80.00,,$120.00,Open,-$2.273,
-,May 23 2024,,"Bought 1 /LEQ4 LEN4 07/05/24 Put 178.00 @ 1.725
-Sold 1 /LEQ4 LEN4 07/05/24 Put 179.00 @ 2.0",,Short Put Spread,$110.00,,$290.00,Open,-$9.840,
-,May 23 2024,,"Bought 1 /ZCN4 OZCN4 06/21/24 Put 455.00 @ 8.25
-Sold 1 /ZCN4 OZCN4 06/21/24 Put 460.00 @ 10.5",,Short Put Spread,$112.50,,$137.50,Open,-$9.840,
-,May 23 2024,,"Bought 1 /ZSN4 OZSN4 06/21/24 Put 1220.00 @ 15.5
-Sold 1 /ZSN4 OZSN4 06/21/24 Put 1230.00 @ 19.625",,Short Put Spread,$206.25,,$293.75,Open,-$9.840,
+",Short Put Spread,$112.00,-$10.00,$188.00,Close,-$2.546,99.454
+Mar 15 2024,Apr 8 2024,"Sold 1 EWW 04/19/24 Put 67.00 @ 1.38
+Bought 1 EWW 04/19/24 Put 64.00 @ 0.57",Short Put Spread,$81.00,-$10.00,$219.00,Close,-$2.546,68.454
+Mar 15 2024,Apr 8 2024,"Bought 1 ETSY 04/12/24 Call 75.00 @ 0.77
+Sold 1 ETSY 04/12/24 Call 73.00 @ 1.11",Short Call Spread,$34.00,-$7.00,$166.00,Close,-$2.546,24.454
+Mar 15 2024,Apr 5 2024,"Bought 1 /MCLK4 MCOK4 04/17/24 Put 77.50 @ 1.37
+Sold 1 /MCLK4 MCOK4 04/17/24 Put 80.50 @ 2.51",Short Put Spread,$114.00,-$11.00,$186.00,Close,-$7.280,95.72
+Mar 19 2024,Apr 5 2024,"Sold 1 TLT 04/12/24 Call 95.00 @ 0.49
+Bought 1 TLT 04/12/24 Call 97.00 @ 0.18",Short Call Spread,$31.00,-$7.00,$169.00,Close,-$2.546,21.454
+Mar 22 2024,Apr 15 2024,"Sold 1 IWM 04/19/24 Put 205.00 @ 3.35
+Bought 1 IWM 04/19/24 Put 202.00 @ 2.27",Short Put Spread,$108.00,-$252.00,$192.00,Close,-$2.546,-146.546
+Mar 22 2024,Apr 15 2024,"Sold 1 COIN 04/19/24 Put 257.50 @ 23.41
+Bought 1 COIN 04/19/24 Put 255.00 @ 22.05",Short Put Spread,$136.00,-$187.00,$114.00,Close,-$2.566,-53.566
+Mar 22 2024,Apr 11 2024,"Sold 1 XLY 04/12/24 Put 182.50 @ 2.25
+Bought 1 XLY 04/12/24 Put 179.00 @ 1.15",Short Put Spread,$110.00,-$254.00,$240.00,Close,-$2.546,-146.546
+Mar 26 2024,Apr 5 2024,"Bought 1 MCD 04/19/24 Call 290.00 @ 0.79
+Sold 1 MCD 04/19/24 Call 287.5 @ 1.24",Short Call Spread,$45.00,120.0,$205.00,Close,-2.686,162.314
+Mar 26 2024,Apr 11 2024,"Bought 1 EA 04/19/24 Call 139 @ 0.40
+Sold 1 EA 04/19/24 Call 136 @ 0.92",Short Call Spread,$52.00,45.0,$248.00,Close,-2.816,94.184
+Mar 28 2024,Apr 11 2024,"Bought 1 /ZCK4 OZCK4 04/26/24 Call 470.00 @ 2.875
+Sold 1 /ZCK4 OZCK4 04/26/24 Call 465.00 @ 3.625",Short Call Spread,$37.50,-$6.25,$262.50,Close,-$14.680,16.57
+Mar 28 2024,Apr 5 2024,"Sold 1 GLD 04/19/24 Put 205.00 @ 2.24
+Bought 1 GLD 04/19/24 Put 202.50 @ 1.21",Short Put Spread,$103.00,-$10.00,$197.00,Close,-$2.546,90.454
+Mar 28 2024,Apr 15 2024,"Sold 1 SMH 04/19/24 Put 225.00 @ 5.72
+Bought 1 SMH 04/19/24 Put 222.50 @ 4.60",Short Put Spread,$112.00,-$135.00,$188.00,Close,-$2.546,-25.546
+Mar 28 2024,May 14 2024,"Sold 1 BITO 04/17/24 Put 27.00 @ 2.04
+Bought 1 BITO 04/17/24 Put 22.00 @ 0.60",Short Put,$144.00,-$206.00,$356.00,Close,-$2.546,-64.546
+Apr 2 2024,Apr 30 2024,"Sold 1 /LE 05/03/24 Call 182.00 @ 1.225
+Bought 1 /LE 05/03/24 Call 183.00 @ 1.025",Short Call Spread,$80.00,-$10.00,$320.00,Close,-$14.680,55.32
+Apr 2 2024,May 3 2024,"Sold 1 XLU 05/17/24 Put 64.00 @ 0.76
+Bought 1 XLU 05/17/24 Put 59.00 @ 0.12        ",Short Put,$64.00,-$6.00,$436.00,Close,-$2.503,55.497
+Apr 15 2024,May 7 2024,"Sold 1 KRE 05/17/24 Call 50.00 @ 0.62
+Bought 1 KRE 05/17/24 Call 52.00 @ 0.28",Short Call Spread,$34.00,-$80.00,$166.00,Close,-$2.546,-48.546
+Apr 15 2024,May 15 2024,"Sold 1 XLV 05/17/24 Call 144.00 @ 0.85
+Bought 1 XLV 05/17/24 Call 146.00 @ 0.45",Short Call Spread,$40.00,-$149.00,$160.00,Close,-$2.546,-111.546
+Apr 15 2024,May 3 2024,"Sold 1 GLD 05/10/24 Put 217.5.00 @ 3.57
+Bought 1 GLD 05/10/24 Put 215.00 @ 2.51",Short Put Spread,$106.00,137.0,$144.00,Close,-2.686,240.314
+Apr 18 2024,May 7 2024,"Sold 1 IWM 05/17/24 Call 202.00 @ 1.67
+Bought 1 IWM 05/17/24 Call 204.00 @ 1.22",Short Call Spread,$45.00,-$137.00,$205.00,Close,-$2.546,-94.546
+Apr 23 2024,May 16 2024,"Sold 1 XLP 06/21/24 Put 74.00 @ 0.74
+Bought 1 XLP 06/21/24 Put 69.00 @ 0.15",Short Put Spread,$59.00,-$6.00,$441.00,Close,-$2.546,50.454
+Apr 23 2024,May 2 2024,"Bought 1 /MCLM4 MCOM4 05/16/24 Put 80.75 @ 0.73
+Sold 1 /MCLM4 MCOM4 05/16/24 Put 83.75 @ 1.80",Short Put Spread,$107.00,-$250.00,$193.00,Close,-$7.280,-150.28
+Apr 23 2024,May 17 2024,"Bought 1 EEM 06/21/24 Put 37.00 @ 0.13
+Sold 1 EEM 06/21/24 Put 41.00 @ 0.88",Short Put,$75.00,-$7.00,$325.00,Close,-$2.546,65.454
+Apr 23 2024,May 22 2024,"Sold 1 XME 06/21/24 Put 58.00 @ 1.04
+Bought 1 XME 06/21/24 Put 53.00 @ 0.27",Short Put,$77.00,-$16.00,$423.00,Close,-$2.546,58.454
+May 3 2024,May 22 2024,"Bought 1 /ZCN4 OZCM4 05/24/24 Put 455.00 @ 6.25
+Sold 1 /ZCN4 OZCM4 05/24/24 Put 460.00 @ 8.5",Short Put Spread,$112.50,-$93.75,$137.50,Close,-$14.680,4.07
+May 7 2024,May 07 2024,"Sold 1 KRE 06/21/24 Put 48.00 @ 0.79
+Bought 1 KRE 06/21/24 Put 43.00 @ 0.16",Short Put Spread,$63.00,-16.0,$437.00,Close,-0.13,46.87
+May 7 2024,May 23 2024,"Bought 1 SMH 05/31/24 Put 220.00 @ 5.38
+Sold 1 SMH 05/31/24 Put 222.50 @ 6.50",Short Put Spread,$112.00,-$9.00,$138.00,Close,-$2.546,100.454
+May 7 2024,Jun 4 2024,"Bought 1 XLY 06/21/24 Put 176.00 @ 2.50
+Sold 1 XLY 06/21/24 Put 179.00 @ 3.55",Short Put Spread,$105.00,,-$195.00,Close,-$2.273,102.727
+May 14 2024,May 21 2024,"Bought 1 /LEM4 LEM4 06/07/24 Call 184.00 @ 0.625
+Sold 1 /LEM4 LEM4 06/07/24 Call 183.00 @ 0.8",Short Call Spread,$70.00,-$170.00,$330.00,Close,-$14.680,-114.68
+May 14 2024,May 16 2024,"Bought 1 /MCLN4 MCON4 06/14/24 Call 83.75 @ 0.47
+Sold 1 /MCLN4 MCON4 06/14/24 Call 81.75 @ 0.81",Short Call Spread,$34.00,-$43.00,$166.00,Close,-$7.280,-16.28
+May 22 2024,May 22 2024,"Bought 1 COIN 06/21/24 Put 227.5 @ 17.84
+Sold 1 COIN 06/21/24 Put 230.00 @ 19.20",Short Put Spread,$136.00,-1784.0,$114.00,Close,-2.453,-1650.453
+May 22 2024,May 22 2024,"Bought 1 XBI 06/21/24 Put 90.00 @ 1.58
+Sold 1 XBI 06/21/24 Put 92.00 @ 2.38 ",Short Put Spread,$80.00,-158.0,$120.00,Close,-0.13,-78.13
+May 23 2024,May 23 2024,"Bought 1 /LEQ4 LEN4 07/05/24 Put 178.00 @ 1.725
+Sold 1 /LEQ4 LEN4 07/05/24 Put 179.00 @ 2.0",Short Put Spread,$110.00,800.0,$290.00,Close,-2.42,907.58
+May 23 2024,May 23 2024,"Bought 1 /ZCN4 OZCN4 06/21/24 Put 455.00 @ 8.25
+Sold 1 /ZCN4 OZCN4 06/21/24 Put 460.00 @ 10.5",Short Put Spread,$112.50,525.0,$137.50,Close,-2.42,635.08
+May 23 2024,May 23 2024,"Bought 1 /ZSN4 OZSN4 06/21/24 Put 1220.00 @ 15.5
+Sold 1 /ZSN4 OZSN4 06/21/24 Put 1230.00 @ 19.625",Short Put Spread,$206.25,981.25,$293.75,Close,-2.42,1185.08
+Mar 04 2024,Mar 04 2024,Bought 1 QQQ 06/21/24 Put 345.78 @ 0.98,,-98.00,192.0,,Close,-0.41000000000000003,93.59
+Mar 21 2024,Mar 21 2024,Bought 2 QQQ 06/28/24 Put 338.78 @ 0.69,,-138.00,133.0,,Close,-0.53,-5.53
+Mar 28 2024,Mar 28 2024,Bought 1 BITO 05/17/24 Put 22.00 @ 0.60,,-60.00,204.0,,Close,-0.27,143.73
+Apr 02 2024,Apr 30 2024,Sold 1 /LEM4 LEK4 05/03/24 Call 182.00 @ 1.225,,490.00,-30.0,,Close,-2.42,457.58
+Apr 02 2024,Apr 30 2024,Bought 1 /LEM4 LEK4 05/03/24 Call 183.00 @ 1.025,,-410.00,20.0,,Close,-2.42,-392.42
+Apr 05 2024,,Bought 1 MCD 04/19/24 Call 287.50 @ 0.11,,-11.00,0.00,,Open,-0.13,-11.13
+Apr 11 2024,Apr 11 2024,Bought 1 EA 04/19/24 Call 136.00 @ 0.12,,-12.00,5.0,,Close,-0.27,-7.27
+May 03 2024,,Bought 1 GLD 05/10/24 Put 217.50 @ 6.57,,-657.00,0.00,,Open,-0.13,-657.13
+May 14 2024,,Bought 1 BITO 05/17/24 Put 27.00 @ 2.09,,-209.00,0.00,,Open,-0.13,-209.13
+Jun 06 2024,Jul 10 2024,Sold 1 EWZ 07/19/24 Put 28.00 @ 0.57,,57.00,-12.0,,Close,-0.13,44.87
+Jun 06 2024,Jul 18 2024,Sold 1 XME 07/19/24 Put 59.00 @ 0.70,,70.00,-5.0,,Close,-0.13,64.87
+Jun 06 2024,Jul 17 2024,Sold 1 EWW 07/19/24 Put 60.00 @ 1.00,,100.00,-55.0,,Close,-0.13,44.87
+Jun 06 2024,,Sold 1 COIN 06/21/24 Put 227.50 @ 4.94,,494.00,0.00,,Open,-0.15,493.85
+Jun 18 2024,Jul 08 2024,Sold 1 KRE 07/19/24 Put 46.00 @ 1.15,,115.00,-15.0,,Close,-0.13,99.87
+Jul 08 2024,Jul 29 2024,Sold 1 XLU 08/16/24 Put 66.00 @ 0.41,,41.00,-8.0,,Close,-0.13,32.87
+Jul 18 2024,Aug 15 2024,Sold 1 XLP 08/16/24 Put 78.00 @ 0.71,,71.00,-3.0,,Close,-0.13,67.87
+Jul 31 2024,Sep 10 2024,Sold 1 XME 09/20/24 Put 60.00 @ 1.00,,100.00,-593.0,,Close,-0.13,-493.13
+Aug 16 2024,,Sold 1 KRE 09/20/24 Put 52.00 @ 0.70,,70.00,0.00,,Open,-0.14,69.86
+Sep 10 2024,Sep 24 2024,Sold 1 XME 10/18/24 Put 60.00 @ 6.08,,608.00,-64.0,,Close,-0.13,543.87
+Sep 10 2024,Sep 25 2024,Sold 1 XLU 10/18/24 Put 75.00 @ 0.85,,85.00,-14.0,,Close,-0.13,70.87
+Sep 23 2024,Sep 23 2024,Bought 1 SMH 11/15/24 Put 220.00 @ 5.80,,-580.00,718.0,,Close,-0.28,137.72
+Sep 23 2024,Oct 08 2024,Sold 1 IYR 10/18/24 Put 100.50 @ 0.97,,97.00,-237.0,,Close,-0.13,-140.13
+Oct 02 2024,Nov 06 2024,Sold 1 XLU 11/15/24 Put 78.00 @ 0.91,,91.00,-155.0,,Close,-0.13,-64.13
+Oct 08 2024,Nov 06 2024,Sold 1 IYR 11/15/24 Put 99.00 @ 2.51,,251.00,-271.0,,Close,-0.13,-20.13
+Oct 21 2024,,Sold 1 SLV 12/20/24 Put 29.00 @ 0.71,,71.00,0.00,,Open,-0.14,70.86
+Nov 06 2024,,Sold 1 XLU 12/06/24 Put 77.50 @ 1.70,,170.00,0.00,,Open,-0.14,169.86
+Nov 06 2024,,Sold 1 IYR 12/06/24 Put 98.50 @ 2.81,,281.00,0.00,,Open,-0.14,280.86
+Nov 07 2024,,Bought 1 SMH 11/15/24 Put 225.00 @ 0.09,,-9.00,0.00,,Open,-0.13,-9.13

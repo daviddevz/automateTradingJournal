@@ -12,8 +12,7 @@ class JournalTradeValidator(TradeValidator):
     
     def is_trade_multi_leg(self, trade_description: str, transaction_trade_idx: int) -> bool:
         (self.trade_exist_flag, self.journal_trade_idx) = self.find_trade(trade_description, transaction_trade_idx)
-        print(f"trade_exist_flag: {self.trade_exist_flag} journal_trade_idx: {self.journal_trade_idx}") 
-        if (self.trade_exist_flag == False):
+        if (self.trade_exist_flag == False and self.journal_trade_idx != None):
             return True
         
         else:
@@ -28,7 +27,6 @@ class JournalTradeValidator(TradeValidator):
             return False
     
     def get_journal_trade_idx(self) -> int:
-        print(f"journal_trade_idx in get_journal_trade_idx: {self.journal_trade_idx}")
         return self.journal_trade_idx
     
     # Returns tuple of trade_exist_flag and trade_idx
@@ -37,10 +35,6 @@ class JournalTradeValidator(TradeValidator):
 
         for idx in range(len(self.journal_dict_["Trade Description"])):
             shortened_trade_description = super().splice_trade_description(trade_description)
-
-            #print(f"journal_dict: {self.journal_dict_['Trade Description']}")
-            print(f"shortened_trade_description: {shortened_trade_description}", 
-                  f"journal trade description: {self.journal_dict_['Trade Description'][idx]}")
             
             # Trade exists
             if shortened_trade_description in self.journal_dict_["Trade Description"][idx]:
@@ -66,6 +60,6 @@ class JournalTradeValidator(TradeValidator):
                 if (Utility.is_date_equal(journal_expiration_date, transaction_exp_date)
                 and Utility.is_date_equal(journal_entry_date, transaction_date)):
                     return(False, idx)
-            
+                  
         return(False, None)
             

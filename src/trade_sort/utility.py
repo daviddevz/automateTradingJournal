@@ -7,22 +7,24 @@ class Utility:
     
     @staticmethod
     # Add specific character to string object in a specific index
-    def add_char(literal: str, character: str, idx: int) -> str:
-        new_literal = literal[:idx] + character + literal[idx:]
-        return new_literal
+    def add_char(literal: str, character: str) -> str:
+        char_idx = literal.find('-')
+
+        if char_idx == -1:
+            new_literal = literal[:char_idx] + character + literal[char_idx:]
+            return new_literal
+        
+        else:
+            new_literal = literal[:char_idx] + character + literal[char_idx +1:]
+            new_literal = new_literal[:char_idx] + '-' + new_literal[char_idx:]
+            return new_literal
     
     # Remove specific character in string object
     @staticmethod
-    def remove_char(literal: str, character: str) -> str:
-        str_idx = literal.index(character)
-
-        if str_idx == 0:
-            return literal[str_idx +1:]
-        
-        elif str_idx == len(literal) -1:
-            return literal[:str_idx]
-        else:
-            return literal[:str_idx] + literal[str_idx +1:]
+    def remove_char(literal: str, character: list[str]) -> str:
+        for char in character:
+            literal = literal.replace(char, '')
+        return literal
     
     # Convert ISO 8601 date format to Date and return a dict with update date
     # YYYY-MM-DDTHH:MM:SSZ to YYYY-MM-DD example 2024-11-07T11:40:48-0600 to 2024-11-07
